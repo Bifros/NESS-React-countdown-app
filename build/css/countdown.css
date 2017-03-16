@@ -1,0 +1,97 @@
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
+html, body {
+  height: 100%;
+}
+
+#app, #page-wrapper {
+  width: 100%;
+  height: 100%;
+  background: #fed196;
+}
+
+#countdown-container {
+  margin: auto;
+  text-align: center;
+  position: relative;
+  top: calc(50% - 80px);
+  transform: translateY(-50%);
+}
+
+#countdown-title, #finished {
+  font-family: Arial, sans-serif;
+  color: rgba(0, 0, 0, .30);
+  font-weight: 700;
+  font-size: 20px;
+}
+
+#countdown-title {
+  margin-bottom: 30px;
+}
+
+#finished {
+  margin-top: 140px;
+  opacity: 0;
+  transition: .5s;
+}
+
+.count-part {
+  width: 150px;
+  position: relative;
+  transition: .5s;
+}
+
+.counter-separator {
+  margin: 0px 20px;
+}
+
+.count-part, .counter-separator {
+  display: inline-block;
+  font-family: "Orbitron";
+  color: rgba(0, 0, 0, .30);
+  font-weight: 500;
+  font-size: 60px;
+}
+
+#days:after {
+  position: absolute;
+  content: "Days";
+  display: block;
+  bottom: -55px;
+  left: calc(50% - 30px);
+  font-size: 22px;
+  text-align: center;
+}
+
+#hours:before {
+  position: absolute;
+  content: "Hours";
+  display: block;
+  bottom: -55px;
+  left: calc(50% - 30px);
+  font-size: 22px;
+  text-align: center;
+}
+
+#mins:before {
+  position: absolute;
+  content: "Mins";
+  display: block;
+  bottom: -55px;
+  left: calc(50% - 30px);
+  font-size: 22px;
+  text-align: center;
+}
+
+#sec:before {
+  position: absolute;
+  content: "Secs";
+  display: block;
+  bottom: -55px;
+  left: calc(50% - 30px);
+  font-size: 22px;
+  text-align: center;
+}
